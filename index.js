@@ -23,11 +23,11 @@ const mostrar = (data) => {
     }
 ;}
 
-app.get("/", (req, res) =>{
+app.get("/Laboratorio", (req, res) =>{
     res.send("Hola esta es la API")
 }) 
 
-app.get("/Laboratorio",(req,res) => {
+app.get("/",(req,res) => {
     const data = Info();
     res.json(data.Laboratorio)
 });
